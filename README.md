@@ -35,3 +35,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/trufanovn/ipgeobase.git.
+![example workflow](https://github.com/trufanovn/ipgeobase_truf/blob/main/.github/workflows/main.yml/badge.svg)
