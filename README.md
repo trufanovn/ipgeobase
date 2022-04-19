@@ -20,11 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-data = Ipgeobase.lookup('enter IP') \n
-data.country => 'Country Name' \n
-data.city => 'city name' \n
-data.lon => 'lon'' \n
-etc \n
+data = Ipgeobase.lookup('enter IP') /n
+data.country => 'Country Name' /n
+data.city => 'city name' /n
+data.lon => 'lon'' /n
+etc /n
 
 ## Development
 
