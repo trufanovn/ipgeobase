@@ -2,6 +2,9 @@ PATH
   remote: .
   specs:
     ipgeobase_truf (0.1.0)
+      addressable
+      happymapper
+      webmock
 
 GEM
   remote: https://rubygems.org/
@@ -46,13 +49,10 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  addressable
-  happymapper
   ipgeobase_truf!
   minitest (~> 5.0)
   rake (~> 13.0)
   rubocop
-  webmock
 
 BUNDLED WITH
    2.3.7

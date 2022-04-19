@@ -7,9 +7,11 @@ class TestIpgeobase < Minitest::Test
     refute_nil ::Ipgeobase::VERSION
   end
 
-  def test_when_logged_in
-    stub_request(:get, 'http://ip-api.com/').
-    to_return(status: 200)
+  def test_equal_mock
+    xlm_body = File.read('./test/fixtures/xlm_body.xml')
+    stub_request(:get, "http://ip-api.com/xlm/8.8.8.8").to_return(status: 200, body: xlm_body)
+    data = Ipgeobase.lookup('8.8.8.8')
+    assert_equal data.lon, "-77.5"
   end
 
   def test_equal_city

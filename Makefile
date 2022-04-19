@@ -2,7 +2,7 @@ install:
 	bundle install
 
 lint:
-	bundle exec rubocop
+	bundle exec rubocop lib
 
-lint-fix:
-	bundle exec rubocop -A
+my_test:
+	rake test
