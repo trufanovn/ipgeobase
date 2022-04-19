@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "happymapper"
+
 class Post
   include HappyMapper
   tag "query"

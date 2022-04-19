@@ -5,7 +5,6 @@ require_relative "happyinit"
 
 require "addressable/template"
 require "net/http"
-require "happymapper"
 
 module Ipgeobase
   class Error < StandardError
