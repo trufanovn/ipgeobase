@@ -16,15 +16,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ipgeobase
+    $ gem install ipgeobase_truf
 
 ## Usage
 
-data = Ipgeobase.lookup('enter IP')
-data.country => 'Country Name'
-data.city => 'city name'
-data.lon => 'lon''
-etc
+data = Ipgeobase.lookup('enter IP') \n
+data.country => 'Country Name' \n
+data.city => 'city name' \n
+data.lon => 'lon'' \n
+etc \n
 
 ## Development
 
@@ -34,4 +34,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/trufanovn/hexlet-gems/tree/main/ipgeobase.
+Bug reports and pull requests are welcome on GitHub at https://github.com/trufanovn/ipgeobase.git.
