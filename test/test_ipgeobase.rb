@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "test_helper"
+require_relative 'test_helper'
 
 class TestIpgeobase < Minitest::Test
   def test_that_it_has_a_version_number
@@ -8,7 +8,7 @@ class TestIpgeobase < Minitest::Test
   end
 
   def test_when_logged_in
-    stub_request(:get, "http://ip-api.com/").
+    stub_request(:get, 'http://ip-api.com/').
     to_return(status: 200)
   end
 

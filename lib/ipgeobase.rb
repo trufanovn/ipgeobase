@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "ipgeobase/version"
+require_relative 'ipgeobase/version'
 
 require 'happymapper'
 require 'addressable/template'
@@ -17,9 +17,10 @@ module Ipgeobase
     element :lon, String, tag: 'lon'
   end
   class Error < StandardError
+
   end
   def self.lookup(ip)
-    template = Addressable::Template.new("http://{host}{/type}/{ip}")
+    template = Addressable::Template.new('http://{host}{/type}/{ip}')
     uri = template.expand({ 'host' => 'ip-api.com', 'type' => 'xml', 'ip' => ip })
     get_data = Net::HTTP.get_response(uri)
     posts = Post.parse(get_data.body)
