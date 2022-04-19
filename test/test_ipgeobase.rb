@@ -8,6 +8,7 @@ class TestIpgeobase < Minitest::Test
   end
 
   def test_equal_mock
+    WebMock.allow_net_connect!
     xlm_body = File.read('./test/fixtures/xlm_body.xml')
     stub_request(:get, "http://ip-api.com/xlm/8.8.8.8").to_return(status: 200, body: xlm_body)
     data = Ipgeobase.lookup('8.8.8.8')
