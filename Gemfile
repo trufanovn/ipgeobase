@@ -9,14 +9,7 @@ gem 'rake', '~> 13.0'
 
 gem 'minitest', '~> 5.0'
 
-group :development do
-  gem 'rubocop'
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rake'
-  gem 'rubocop-rspec'
-  gem 'solargraph'
-end
+gem 'rubocop'
 
 gem 'addressable'
 
