@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require_relative "ipgeobase/version"
-require_relative "HappyInit"
+require_relative "happyinit"
 
 require "addressable/template"
 require "net/http"
+require "happymapper"
 
 module Ipgeobase
-
   class Error < StandardError
   end
 

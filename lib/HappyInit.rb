@@ -1,4 +1,4 @@
-require "happymapper"
+# frozen_string_literal: true
 
 class Post
   include HappyMapper
